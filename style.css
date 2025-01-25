@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: "Playwrite IN", serif;
+    scroll-behavior: smooth;
+
+}
+.main1{
+    width: 100%;
+    height: 100%;
+    background-image: url(assets/cute_bg.webp);
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: #614883;
+    margin-bottom: 50px;
+}
+.mian1_box{
+    width: 330px;
+    height: 400px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    border: 2px solid #614883;
+    background-color: #f92b6cbb;
+    font-weight: 800;
+
+}
+.mian1_box h1{
+    text-align: left;
+    font-size: 2.5rem;
+    color: #ffffff;
+}.mian1_box p{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.mian1_box::-webkit-scrollbar{
+    display: none;
+}
+.btn_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 10px;
+    background-color: white;
+    border-radius: 10px;
+    gap: 10px;
+}
+.btn_container h2{
+    text-align: center;
+    font-size: 15px;
+}
+.btn_container a{
+    color: #614883;
+    padding: 6px 30px;
+border-radius: 10px;
+    border: 2px solid #614883;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.main2{
+    width: 100%;
+
+    padding: 10px;
+}
+.main3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.main3 a{
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: black;
+    color: white;
+    text-transform: lowercase;
+    border-radius: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+.timeline {
+    padding: 10px;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background: #f92b6c;
+    margin-left: -1px;
+}
+.timeline-item {
+    position: relative;
+    margin: 0 auto;
+    padding: 35px 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.timeline-item::before {
+    content: '2023';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 100px;
+    height: 30px;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    background: #f92b6c;
+}
+.ti_2::before{
+    content: '2024';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 100px;
+    height: 30px;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    background: #f92b6c;
+}
+.ti_3::before{
+    content: '2025';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 100px;
+    height: 30px;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    background: #f92b6c;
+}
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background: #f92b6c;
+    z-index: -1;
+}
+.timeline-item-content {
+    position: relative;
+    background: #f92b6c;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+.timeline-item-content h2 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.timeline-item-content p {
+    color: #fff;
+    font-size: 16px;
+}
+.timeline-item-content img{
+    width: 100%;
+}
+.timeline-item-content p{
+    font-size: 18px;
+    text-transform: lowercase;
+}
+.arrow{
+    position: absolute;
+    bottom: 1%;
+    right: 2%;
+    z-index: 111;
+    width: 30px;
+    font-weight: 800;
+}
